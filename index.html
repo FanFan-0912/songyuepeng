@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的音乐播放器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .player-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .song-name {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        audio {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .devices-support {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 12px;
+        }
+        
+        .device-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <h1>🎵 我的音乐</h1>
+        <p class="song-name">点击播放</p>
+        
+        <audio controls>
+            <source src="宋宋，毕业快乐.mp3" type="audio/mpeg">
+            你的浏览器不支持音频播放
+        </audio>
+        
+        <div class="devices-support">
+            <p>支持所有设备播放：</p>
+            <div class="device-icons">
+                <span title="电脑">🖥️</span>
+                <span title="手机">📱</span>
+                <span title="平板">📲</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
