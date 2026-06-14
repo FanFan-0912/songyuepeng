@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的音乐播放器</title>
+    <title>宋宋，毕业快乐</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: '微软雅黑', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,12 +21,12 @@
             padding: 20px;
         }
         
-        .player-container {
+        .container {
             background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            max-width: 500px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
             width: 100%;
             text-align: center;
         }
@@ -34,55 +34,59 @@
         h1 {
             color: #333;
             margin-bottom: 10px;
-            font-size: 28px;
+            font-size: 36px;
         }
         
-        .song-name {
-            color: #666;
+        .subtitle {
+            color: #999;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        
+        .message {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
             margin-bottom: 30px;
-            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            font-size: 16px;
         }
         
         audio {
             width: 100%;
-            margin: 20px 0;
+            margin: 30px 0;
             border-radius: 5px;
         }
         
-        .devices-support {
+        .footer {
+            color: #ccc;
             margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #999;
             font-size: 12px;
-        }
-        
-        .device-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <div class="player-container">
-        <h1>🎵 我的音乐</h1>
-        <p class="song-name">点击播放</p>
+    <div class="container">
+        <h1>🎓 宋宋，毕业快乐！</h1>
+        <p class="subtitle">点击播放，听听我的祝福 ✨</p>
         
+        <div class="message">
+            <p>亲爱的宋宋，</p>
+            <p style="margin-top: 15px;">
+                毕业了！祝你在新的人生阶段里，
+                <br>开心每一天，闪闪发光✨
+            </p>
+        </div>
+        
+        <!-- 这里填你的MP3文件名 -->
         <audio controls>
             <source src="宋宋，毕业快乐.mp3" type="audio/mpeg">
-            你的浏览器不支持音频播放
+            你的浏览器不支持音频播放，请尝试用其他浏览器
         </audio>
         
-        <div class="devices-support">
-            <p>支持所有设备播放：</p>
-            <div class="device-icons">
-                <span title="电脑">🖥️</span>
-                <span title="手机">📱</span>
-                <span title="平板">📲</span>
-            </div>
+        <div class="footer">
+            <p>💝 专为你制作的毕业礼物</p>
         </div>
     </div>
 </body>
